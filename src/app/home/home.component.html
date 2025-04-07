@@ -1,7 +1,7 @@
 <div class="container">
     <mat-card>
         <h1>Welcome to the UI</h1>
-        <div class="image-container">
+        <div class="image-container" (click)="fileinput.click()">
             <img height="200" width="200" mat-card-image src="https://www.w3schools.com/howto/img_avatar.png"
                 alt="User Image" />
             <div class="hover-text">Select the Image</div>
@@ -46,3 +46,5 @@
         </mat-card-actions>
     </mat-card>
 </div>
+
+<input (change)="getdata($event)" style="display: none;" #fileinput type="file">

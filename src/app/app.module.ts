@@ -10,10 +10,22 @@ import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { ContactComponent } from './contact/contact.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { InspectComponent } from './inspect/inspect.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MainMenuComponent,
+    ContactComponent,
+    ContactDetailComponent,
+    InspectComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +36,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

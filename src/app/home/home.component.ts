@@ -20,7 +20,23 @@ export class HomeComponent {
   }
 
   submit() {
-   
+     
   }
+
+  UserImage:any
+  getdata(event:any){
+    const FileSource: File = event.target.files[0];
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      debugger
+      this.UserImage = reader.result
+      console.log(this.UserImage);
+      
+    };
+    reader.readAsDataURL(FileSource);
+  }
+
+
+
  
 }

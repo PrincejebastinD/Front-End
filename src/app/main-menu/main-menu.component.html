@@ -1,0 +1,8 @@
+<div class="container1">
+     <div #childDiv *ngFor="let item of items; let i = index">
+         <app-contact *ngIf="i == 0"></app-contact>
+         <app-contact-detail (click)="getinspect()" *ngIf="i == 1"></app-contact-detail>
+         <app-inspect *ngIf="i == 2 && inspect"></app-inspect>
+     </div>
+</div>
+
