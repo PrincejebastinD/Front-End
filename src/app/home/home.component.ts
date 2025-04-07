@@ -23,7 +23,7 @@ export class HomeComponent {
      
   }
 
-  UserImage:any
+  UserImage:any;
   getdata(event:any){
     const FileSource: File = event.target.files[0];
     const reader = new FileReader();
